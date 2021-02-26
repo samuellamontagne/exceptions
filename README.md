@@ -20,5 +20,10 @@ sa2.at(7) = 99;  // index out of bounds: throws exception
 ```
 
 
-HINT:  You'll need to get memory from the heap.  Don't forget to de-allocate it at the appropriate time!  
-HINT 2:  If it helps, you can use a standard-library container like std::array inside your class.  
+**HINT 1:**  You'll need to get memory from the heap.  Don't forget to de-allocate it at the appropriate time!  
+**HINT 2:**  If it helps, you can use a standard-library container like std::array inside your class.  
+  
+**EXTRA CREDIT:**
+1)  use operator overloading to accomplish indexing and copying.  
+2)  Make a constructor that accepts an initializer_list of integers to store.  
+
