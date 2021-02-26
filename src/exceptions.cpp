@@ -1,9 +1,9 @@
 //============================================================================
-// Name        : test.cpp
-// Author      : Samuel Lamontagne
+// Name        : exceptions.cpp
+// Author      : Samuel Lamontagne & Claire Mevolhon
 // Version     :
 // Copyright   : Your copyright notice
-// Description : Hello World in C++, Ansi-style
+// Description : Smart Array that throw expetions
 //============================================================================
 
 #include <iostream>

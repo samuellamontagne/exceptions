@@ -19,6 +19,7 @@ int& SmartArray::at(int position){
 			throw "out-of-bound index";
 	} catch(char const* e){
 		cout << e << endl;
+		exit(-1);
 	}
 	return (array1.at(position));
 }
