@@ -12,17 +12,22 @@
 using namespace std;
 
 int main() {
+	try{
+		SmartArray sa = SmartArray(5);
+		sa.at(0) = 2;
 
-	SmartArray sa = SmartArray(5);
-	sa.at(0) = 2;
+		cout << sa.at(0) << endl;
 
-	cout << sa.at(0) << endl;
+		SmartArray sa2 = sa.copy();
 
-	SmartArray sa2 = sa.copy();
+		cout << sa2.at(0) << endl;
 
-	cout << sa2.at(0) << endl;
+		sa2.at(7) = 99; // index out of bounds: exceptions
 
-	sa2.at(7) = 99; // index out of bounds: exceptions
+	} catch(const char* e){
+		cout << e << endl;
+		exit(-1);
+	}
 
 	return 0;
 }
