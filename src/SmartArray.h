@@ -16,6 +16,7 @@ using namespace std;
 class SmartArray {
 public:
 	SmartArray(int size);
+	SmartArray(vector<int> startList);
 	int& at(int position);
 	SmartArray copy();
 

@@ -13,6 +13,10 @@ SmartArray::SmartArray(int size) {
 	array1.resize(size);
 }
 
+SmartArray::SmartArray(vector<int> startList){
+	array1 = startList;
+}
+
 int& SmartArray::at(int position){
 
 	if(position > array1.size() || position < 0)
