@@ -19,6 +19,7 @@ public:
 	SmartArray(vector<int> startList);
 	int& at(int position);
 	SmartArray copy();
+	int& operator[](const int& position);
 
 private:
 	vector<int> array1;

@@ -29,3 +29,7 @@ SmartArray SmartArray::copy(){
 	return *this;
 }
 
+int& SmartArray::operator[](const int& position){
+	return (array1.at(position));
+}
+

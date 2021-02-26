@@ -14,23 +14,39 @@ using namespace std;
 int main() {
 	try{
 		SmartArray sa = SmartArray(5);
+
 		vector<int> list;
 		list.push_back(1);
 		list.push_back(2);
 		list.push_back(3);
 
-		SmartArray sal = SmartArray(list);
+		SmartArray sal = SmartArray(list); // initialize with a list of ints
+
+		cout << "List initializer : ";
 
 		for(int i = 0; i < list.size() ; i++)
-			cout << sal.at(i) << endl;
+			cout << sal.at(i) << " ";
+
+		cout << endl;
 
 		sa.at(0) = 2;
 
-		cout << sa.at(0) << endl;
+		// indexing operator ([]) overloading
+		sa[1] = 5;
 
-		SmartArray sa2 = sa.copy();
+		cout << "sa[1] : " << sa[1] << endl;
 
-		cout << sa2.at(0) << endl;
+		cout << "sa.at(0) : " << sa.at(0) << endl;
+
+		SmartArray sa2 = sa.copy(); //copying method
+
+		SmartArray sa3 = sa; // copying operator
+
+		//Copying
+
+		cout << "sa3[1] : " << sa3[1] << endl;
+
+		cout << "sa2.at(0): " << sa2.at(0) << endl;
 
 		sa2.at(7) = 99; // index out of bounds: exceptions
 
